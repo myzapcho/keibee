@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--위드는 디바이스 크기 기준으로 간다는 거-->
+    
+    <title>Document</title>
+
+    <style>
+        /* 
+            id는 중복허용이 되지 않는다. 
+            class는 중복허용 된다.
+        */
+        #ha{ /*id 선택자 */
+            color: aquamarine;
+            background-color: black;
+        }
+        .hb{ /* class 선택자 */
+            background-color: coral;
+        }
+        .center{
+            text-align: center;
+            color: crimson;
+        }
+        p{ /* 태그 선택자 */
+            font-size: 200%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h1 id="ha"> h1 </h1>
+        <h2 class="hb"> h2 </h2>
+        <h3 class="hb center"> h3 </h3>
+        <h4> h4 </h4>
+        <h5> h5 </h5>
+        <p class="center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptas iste quisquam expedita. Reprehenderit eaque nam quo placeat eius labore itaque nulla quasi quam impedit autem, accusamus ratione, dolor natus.
+        </p><!--paragraph : 문단-->
+
+    </div>
+</body>
+</html>
