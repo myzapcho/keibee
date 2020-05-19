@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            /*height: 80px;*/
+        }
+        #qqq{
+            height: 90px;
+            margin: 50px 30px 20px 10px ; /*4개 주는 방법 : 위 오른쪽 아래 왼쪽 순서 */
+        }
+        #eee{
+            /*margin: 10px 10px; /* 2개 주는 방법  (아래 위)  (좌 우)   */
+             /* 패딩에는 오토가 없다. 넣는 방식은 마진과 같다...*/
+             display: block;
+             position: relative;
+             z-index: 1;
+             
+ 
+        }
+        #eee::after{
+            content: "";
+            background-image:url("asdf.jpg"); 
+             opacity: 0.3;
+             position: absolute;
+             
+             z-index: -1;
+        }
+
+        .rrr{
+            margin-top: 10px; /* 1개만 주는 방법 4방향 left right top bottom */
+            margin-left: 100px;
+            padding: 100px 10px 30px 30px;
+
+        }
+        #ttt{
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="qqq"><!--마진만-->
+        
+    </div>
+
+    <div id="ttt">
+        <div id="eee" ><!--패딩만-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum eum blanditiis necessitatibus, ipsam illo quasi officiis fugit tempore nostrum, odit aspernatur velit vel corrupti a aliquid reiciendis, soluta officia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi enim, ad aliquid deserunt nam tenetur placeat, dolore quae, delectus corrupti. Ipsa eos et iusto itaque animi nulla illum dolorem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum magnam amet dolores! Blanditiis numquam voluptate culpa ea quisquam asperiores eos assumenda maiores. Nemo quibusdam minus dignissimos maxime eum! Aliquam?
+        </p>
+        
+        
+        </div>
+    </div>
+    
+    <div class="rrr"><!--마진 패딩 다-->
+        asdffwaeaeewfawef
+    </div>
+    
+</body>
+</html>
